@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SecondHand C0D1NG</title>
+  
+  
+  <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://yiweishen.github.io/"/>
+  <updated>2021-05-02T13:28:12.823Z</updated>
+  <id>http://yiweishen.github.io/</id>
+  
+  <author>
+    <name>David Shen</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Hexo again</title>
+    <link href="http://yiweishen.github.io/2021/05/03/Hello-Hexo/"/>
+    <id>http://yiweishen.github.io/2021/05/03/Hello-Hexo/</id>
+    <published>2021-05-03T01:24:54.000Z</published>
+    <updated>2021-05-02T13:28:12.823Z</updated>
+    
+    <content type="html"><![CDATA[<p>Finally, I got hexo upgraded.</p><p>It worked fine, again.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Finally, I got hexo upgraded.&lt;/p&gt;
+&lt;p&gt;It worked fine, again.&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Code myself a blog</title>
+    <link href="http://yiweishen.github.io/2021/03/31/Code-myself-a-blog/"/>
+    <id>http://yiweishen.github.io/2021/03/31/Code-myself-a-blog/</id>
+    <published>2021-03-30T20:53:15.000Z</published>
+    <updated>2021-03-30T08:56:09.793Z</updated>
+    
+    <content type="html"><![CDATA[<p>I have been thinking about to code myself a blog from scratch because the hexo blog seems out of date. The interactions between Github and Hexo are sometimes failing and I got warnings of it might not be working in some future. Maybe it’s good time to practice some front-end coding with html/css and javascript.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I have been thinking about to code myself a blog from scratch because the hexo blog seems out of date. The interactions between Github an</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode</title>
+    <link href="http://yiweishen.github.io/2021/03/31/Leetcode/"/>
+    <id>http://yiweishen.github.io/2021/03/31/Leetcode/</id>
+    <published>2021-03-30T20:45:17.000Z</published>
+    <updated>2021-03-30T08:52:01.811Z</updated>
+    
+    <content type="html"><![CDATA[<p>The coding experience on Leetcode is fantastic because you can always get instant feedback that your code is not working. Then you try again and get the feedback again that your codes fail. Back and forth serveral times until you get it.</p><p>To be honest, I like Project Euler more, because of its simplicity and the sense of art comes from the simplicity. Still, I think you need the Leetcode to practice to get a job. In this sense, it’s a wonderful website that gives you hope of the employment.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;The coding experience on Leetcode is fantastic because you can always get instant feedback that your code is not working. Then you try ag</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Code Complete</title>
+    <link href="http://yiweishen.github.io/2021/03/24/Code-Complete/"/>
+    <id>http://yiweishen.github.io/2021/03/24/Code-Complete/</id>
+    <published>2021-03-23T22:10:19.000Z</published>
+    <updated>2021-03-23T10:17:40.744Z</updated>
+    
+    <content type="html"><![CDATA[<p>The book of Code Complete has been sitting on my book shelf for a long time. I always feel that it was a big book and the content is too much for my level. But these feelings were purely generated from the imagination because I never ever actually tried to read the book.</p><p>Until now. I began the reading. And it turns out the content makes sense to me in a lot of ways. I think it is considered as a classic book for a good reason.</p><p>It might take some time before I can finish the book, but I can say it now to anyone hesitate to read it, today is the day, just read it.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;The book of Code Complete has been sitting on my book shelf for a long time. I always feel that it was a big book and the content is too </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&gt; /dev/null 2&gt;&amp;1</title>
+    <link href="http://yiweishen.github.io/2021/03/20/dev-null-2-1/"/>
+    <id>http://yiweishen.github.io/2021/03/20/dev-null-2-1/</id>
+    <published>2021-03-19T22:25:34.000Z</published>
+    <updated>2021-03-19T10:35:52.979Z</updated>
+    
+    <content type="html"><![CDATA[<p>I saw something in the shell code as follows.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /dev/random &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure><p>Or something similar.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> lang=<span class="string">&quot;en_us.utf-8&quot;</span> &gt;/dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure><p>They all have this part.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;/dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure><p>I did some research to find out what it means. Basically, the number 1 is standard output, the number 2 is the standard error, the char &gt; is to redirect the flow of information, and 2&gt;&amp;1 means to treat the 2 the same way as the 1, and /dev/null, you know, is in the middle of nowhere.</p><p>So, to put them all together, this piece of code means that throw the standard output and standard error away as garbage. You will never see anything stdout or stderr on the screen or anywhere on disk. No, just say goodbye to them. They are gone for good.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I saw something in the shell code as follows.&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CRUD in MongoDB</title>
+    <link href="http://yiweishen.github.io/2021/03/17/CRUD-in-MongoDB/"/>
+    <id>http://yiweishen.github.io/2021/03/17/CRUD-in-MongoDB/</id>
+    <published>2021-03-16T21:46:38.000Z</published>
+    <updated>2021-03-16T10:27:33.478Z</updated>
+    
+    <content type="html"><![CDATA[<p>CRUD operations in MongoDB, i.e. Create, Read, Update, Delete.</p><p>The code is for Pymongo.</p><p>Preparation</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> pymongo <span class="keyword">import</span> MongoClient</span><br><span class="line"></span><br><span class="line">client = MongoClient()</span><br><span class="line">db = client.test_database</span><br><span class="line">collection = db.test_collection</span><br><span class="line"></span><br><span class="line">post = &#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;text&#x27;</span>: <span class="string">&#x27;My first blog post!&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;tags&#x27;</span>: [<span class="string">&#x27;mongodb&#x27;</span>, <span class="string">&#x27;python&#x27;</span>, <span class="string">&#x27;pymongo&#x27;</span>],</span><br><span class="line">        <span class="string">&#x27;date&#x27;</span>: datetime.datetime.utcnow()&#125;</span><br></pre></td></tr></table></figure><p>CREATE:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_lines</span>():</span></span><br><span class="line">    collection.insert_one(post)</span><br><span class="line">    <span class="comment"># if we have multiple posts (an array of dictionaries)</span></span><br><span class="line">    collection.insert_many(posts)</span><br></pre></td></tr></table></figure><p>READ:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">read_lines</span>():</span></span><br><span class="line">    collection.find_one(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;)</span><br><span class="line">    <span class="comment"># if we want to find multiple records at the same time</span></span><br><span class="line">    collection.find_many(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure><p>UPDATE:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_lines</span>():</span></span><br><span class="line">    collection.update_one(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;,</span><br><span class="line">                          &#123;<span class="string">&#x27;$set&#x27;</span>: &#123;<span class="string">&#x27;text&#x27;</span>: <span class="string">&#x27;My second blog post!&#x27;</span>&#125;&#125;)</span><br><span class="line">    <span class="comment"># if we want to update all the relevant records at the same time</span></span><br><span class="line">    collection.update_many(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;,</span><br><span class="line">                          &#123;<span class="string">&#x27;$set&#x27;</span>: &#123;<span class="string">&#x27;text&#x27;</span>: <span class="string">&#x27;My second blog post!&#x27;</span>&#125;&#125;)</span><br></pre></td></tr></table></figure><p>DELETE:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">delete_lines</span>():</span></span><br><span class="line">    collection.delete_one(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;)</span><br><span class="line">    <span class="comment"># if we want to delete the matched records all at once</span></span><br><span class="line">    collection.delete_many(&#123;<span class="string">&#x27;author&#x27;</span>: <span class="string">&#x27;Mike&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure><p>I would say MongoDB is designed in a way that is very user-friendly.</p><p>Check out the pymongo website for more detailed instructions.<br><a href="https://pymongo.readthedocs.io/en/stable/tutorial.html">https://pymongo.readthedocs.io/en/stable/tutorial.html</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;CRUD operations in MongoDB, i.e. Create, Read, Update, Delete.&lt;/p&gt;
+&lt;p&gt;The code is for Pymongo.&lt;/p&gt;
+&lt;p&gt;Preparation&lt;/p&gt;
+&lt;figure class=&quot;high</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Why MongoDB</title>
+    <link href="http://yiweishen.github.io/2021/03/15/Why-MongoDB/"/>
+    <id>http://yiweishen.github.io/2021/03/15/Why-MongoDB/</id>
+    <published>2021-03-15T03:42:20.000Z</published>
+    <updated>2021-03-14T15:48:22.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>Make the database in a simpler way and make it fast instead of designing complicated architecture of tables. MongoDB can do this with its document model to store things more naturally which can be later fit into your applications. Remember, it’s fast. I think it can make your life easier.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Make the database in a simpler way and make it fast instead of designing complicated architecture of tables. MongoDB can do this with its</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Database Sharding</title>
+    <link href="http://yiweishen.github.io/2021/03/15/Database-Sharding/"/>
+    <id>http://yiweishen.github.io/2021/03/15/Database-Sharding/</id>
+    <published>2021-03-15T03:28:42.000Z</published>
+    <updated>2021-03-14T15:41:33.807Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sharding is basically to break up your data across servers to improve the performance and/or infrastructure.</p><p>A replica set of MongoDB for example is replicating your data on any of your servers while sharding is breaking up the data across your servers. The process is called MongoS using Shard Key. When you connect and send queries to MongoDB, MongoS will look up the data and get it from the right place and also merge data if necessary because they can be on different servers.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Sharding is basically to break up your data across servers to improve the performance and/or infrastructure.&lt;/p&gt;
+&lt;p&gt;A replica set of Mong</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fermi paradox</title>
+    <link href="http://yiweishen.github.io/2021/03/14/Fermi-paradox/"/>
+    <id>http://yiweishen.github.io/2021/03/14/Fermi-paradox/</id>
+    <published>2021-03-14T02:40:32.000Z</published>
+    <updated>2021-03-13T14:11:16.472Z</updated>
+    
+    <content type="html"><![CDATA[<p>You can google it for more details, maybe you can find the wikipedia page if you are curious enough. Anyway, put it in a simple way, the paradox is talking about the contradiction between the reality that we have not met any aliens and the high probability there should be so many aliens in the cosmos because the universe is so big.</p><p>It occurs to me that when a society becomes more civilized, it kind of loses the impulse to invade as one way of exploration. You need to treat all those living things equally because you can see the tendency that we treat with each other more fairly no matter who you are, where you come from, or what are you. In the end, everyone lives happily in their chambers and forgets the big universe exists.</p><p>Or maybe, there could be a pandemic out there in the universe, everyone during this period of time needs to stay low and keep quiet. It is equivalent to the dark forest theory I know. But the twist here is that the pandemic can end, and it will.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;You can google it for more details, maybe you can find the wikipedia page if you are curious enough. Anyway, put it in a simple way, the </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Information and Noise</title>
+    <link href="http://yiweishen.github.io/2021/03/12/Information-and-Noise/"/>
+    <id>http://yiweishen.github.io/2021/03/12/Information-and-Noise/</id>
+    <published>2021-03-12T04:40:08.000Z</published>
+    <updated>2021-03-11T15:44:58.638Z</updated>
+    
+    <content type="html"><![CDATA[<p>No, I am not talking about Shannon’s Noisy-Channel Coding Theorem.</p><p>By information, I mean news in general. Because we are exposed to too much information on a daily basis, most of them become noise in our life. For example, it won’t hurt if you miss all the news for a week or a month. Your life goes on. And you know what, the most important news to you will find you anyway. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;No, I am not talking about Shannon’s Noisy-Channel Coding Theorem.&lt;/p&gt;
+&lt;p&gt;By information, I mean news in general. Because we are exposed </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Normal People</title>
+    <link href="http://yiweishen.github.io/2021/03/11/Normal-People/"/>
+    <id>http://yiweishen.github.io/2021/03/11/Normal-People/</id>
+    <published>2021-03-10T20:41:20.000Z</published>
+    <updated>2021-03-10T07:57:30.505Z</updated>
+    
+    <content type="html"><![CDATA[<p>The world is watching Oprah’s interview with Harry and Meghan. And the media is waiting for the royal family to respond.</p><p>Based on what I have witnessed (on television of course), they are being normal people and they are being a normal family with normal family issues. People may judge or gossip the royal family members because they are some kind of celebrity. That’s fine when people don’t have anything meaningful in daily conversasion why not talking about someone else’s life.</p><p>But keep in mind they are just humans. At the end of the day, everyone has their own struggles in life, everyone has their own wars to fight.</p><p>I feel connected with the young couple, and I am very happy they got the courage to make the change.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;The world is watching Oprah’s interview with Harry and Meghan. And the media is waiting for the royal family to respond.&lt;/p&gt;
+&lt;p&gt;Based on </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CS50 Courses</title>
+    <link href="http://yiweishen.github.io/2021/03/09/CS50-Courses/"/>
+    <id>http://yiweishen.github.io/2021/03/09/CS50-Courses/</id>
+    <published>2021-03-08T23:51:10.000Z</published>
+    <updated>2021-03-08T10:57:38.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>I am not sure if I have mentioned this or not, CS50 courses are awesome. Great resources if you are looking for a place to start learning your CS knowledge. It is an entry-level course taught by David J. Malan in Harvard, and it is free. I think CS50 has motivated me in a way and convinced me that CS is something worth learning and doing as a career. Thanks to the internet, we can have the learning experience with such a wonderful teacher David Malan. Please google the course links or watch it on Youtube.</p><p>If you really want to be a coder, do it today.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I am not sure if I have mentioned this or not, CS50 courses are awesome. Great resources if you are looking for a place to start learning</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Upscaling to 4K with ffmpeg</title>
+    <link href="http://yiweishen.github.io/2021/03/08/Upscaling-to-4K-with-ffmpeg/"/>
+    <id>http://yiweishen.github.io/2021/03/08/Upscaling-to-4K-with-ffmpeg/</id>
+    <published>2021-03-08T01:46:51.000Z</published>
+    <updated>2021-03-07T12:52:33.153Z</updated>
+    
+    <content type="html"><![CDATA[<p>I guess it is interesting to see a 4K video which is upscaled from an original 720p video. We can achieve this using ffmpeg.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i input_720p.ts -vf scale=3840x2560:flags=lanczos -c:v libx264 -preset slow -crf 21 output_4k.ts</span><br></pre></td></tr></table></figure><p>Even if you can do this, still, my suggestion will be, DON’T do it.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I guess it is interesting to see a 4K video which is upscaled from an original 720p video. We can achieve this using ffmpeg.&lt;/p&gt;
+&lt;figure </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Elevator Pitch</title>
+    <link href="http://yiweishen.github.io/2021/03/06/Elevator-Pitch/"/>
+    <id>http://yiweishen.github.io/2021/03/06/Elevator-Pitch/</id>
+    <published>2021-03-05T20:54:07.000Z</published>
+    <updated>2021-03-05T07:58:50.370Z</updated>
+    
+    <content type="html"><![CDATA[<p>Something you don’t do in an elevator pitch.</p><p>“I can tell you what happended during my university, it was blablabla”</p><p>“Hi, which floor you want to go, ok, you have missed your floor already.”</p><p>“We are here to talk, forget about pressing the buttons.”</p><p>“I have no idea why I am here.”</p><p>“How about let me sing a song for you.”</p><p>“No, I am waiting for you to introduce yourself.”</p><p>“What do you think about the weather?”</p><p>“Have you watched the new movie?”</p><p>“You look like someone from an interview panel.”</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Something you don’t do in an elevator pitch.&lt;/p&gt;
+&lt;p&gt;“I can tell you what happended during my university, it was blablabla”&lt;/p&gt;
+&lt;p&gt;“Hi, wh</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Remote Working</title>
+    <link href="http://yiweishen.github.io/2021/03/05/Remote-Working/"/>
+    <id>http://yiweishen.github.io/2021/03/05/Remote-Working/</id>
+    <published>2021-03-04T20:59:50.000Z</published>
+    <updated>2021-03-04T08:08:47.909Z</updated>
+    
+    <content type="html"><![CDATA[<p>Previously, I listened to the topic of remote working in one of the podcasts. It is something new to me if the work is entirely remote, but I would say to some extent, we need to get used to this concept of remote working with colleagues in a team. In the beginning, you might feel the pain that when you need to talk to someone to get things done, but other people are living in different time zones, which means they are still in their sleep. So you have to wait.</p><p>After the pandemic, I think people will realize that most of the office work can be done anyway at home. So finding a better way of collaboration among people in different places is one of the most important things to do. You can write more emails. Maybe.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Previously, I listened to the topic of remote working in one of the podcasts. It is something new to me if the work is entirely remote, b</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Full Disk Access for Terminal</title>
+    <link href="http://yiweishen.github.io/2021/03/04/Full-Disk-Access-for-Terminal/"/>
+    <id>http://yiweishen.github.io/2021/03/04/Full-Disk-Access-for-Terminal/</id>
+    <published>2021-03-03T23:11:50.000Z</published>
+    <updated>2021-03-03T10:15:41.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>When I am trying to use the AT command in terminal, it prompt with such a message.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“Terminal” would like to administer your computer. </span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administration can include modifying passwords, networking and system settings.</span><br></pre></td></tr></table></figure><p>It seems you have to grant futher access to the terminal so it can work properly.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;When I am trying to use the AT command in terminal, it prompt with such a message.&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>IF statement with {1,0} matrix</title>
+    <link href="http://yiweishen.github.io/2021/03/03/IF-statement-with-1-0-matrix/"/>
+    <id>http://yiweishen.github.io/2021/03/03/IF-statement-with-1-0-matrix/</id>
+    <published>2021-03-02T19:45:12.000Z</published>
+    <updated>2021-03-02T06:57:33.176Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today, I was trying to use VLookup function in excel to find a particular item in one column with multiple criteria in other columns. It can be done with adding extra columns first to create one real column to look up for and attach the data column you are looking for after that artificial column. For example, you can combine column A&amp;B&amp;C to merge them into one column, so that you can use VLOOKUP(item_A&amp;item_B&amp;item_C, A&amp;B&amp;C&amp;data_column, 2, 0) to find the result.</p><p>To avoid making extra columns, in this case, A&amp;B&amp;C&amp;data_column, I found we can also use IF({1, 0}, A&amp;B&amp;C, data_column) to make such matrix instead of actually copying &amp; pasting to create one. Because IF function can work with array {1, 0} as logical tests, so basically it runs the first test with 1 (i.e. True) and then again with 0 (i.e False), in the end, it generates the result matrix A&amp;B&amp;C &amp; data_column. Really impressive because it looks simple and elegant.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Today, I was trying to use VLookup function in excel to find a particular item in one column with multiple criteria in other columns. It </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Code: The Hidden Language</title>
+    <link href="http://yiweishen.github.io/2021/03/02/Code-The-Hidden-Language/"/>
+    <id>http://yiweishen.github.io/2021/03/02/Code-The-Hidden-Language/</id>
+    <published>2021-03-02T01:29:17.000Z</published>
+    <updated>2021-03-01T12:36:14.605Z</updated>
+    
+    <content type="html"><![CDATA[<p>I am reading the book called Code: The hidden Language of Computer Hardware and Software. It is quite informative and fun. It took some chapters to build some small pieces of hardware. At that moment you have no idea where this is going, because you don’t know how to use this hardware. It did lead you somewhere in the end that you can put them together to build an entire computer. </p><p>What a great experience. It helps me to understand how computers work and especially how things work in small scales and how things evolve historically. Thank you Charles Petzold, it’s a good book.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I am reading the book called Code: The hidden Language of Computer Hardware and Software. It is quite informative and fun. It took some c</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Simple Notes for Git</title>
+    <link href="http://yiweishen.github.io/2020/11/07/Simple-Notes-for-Git/"/>
+    <id>http://yiweishen.github.io/2020/11/07/Simple-Notes-for-Git/</id>
+    <published>2020-11-06T20:45:50.000Z</published>
+    <updated>2021-04-10T16:15:13.250Z</updated>
+    
+    <content type="html"><![CDATA[<p>These notes are for easy reference since I am new to Git.</p><p>You can clone the particular branch in the repo.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b branch-name</span><br></pre></td></tr></table></figure><p>After you have done the git clone your repo to the local device, go inside the repo folder via terminal. You can check git status or check which branch you are in.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure><p>If you want to double check if origin is correct.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure><p>You can fetch the branches along with their respective commits, but not the actual files.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure><p>If you need to synchronize your branch list, for example, a branch is delete on github but not on your local machine.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch -p</span><br></pre></td></tr></table></figure><p>You can pull actual files with info such as the branches with the respective commits.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure><p>You can create and checkout the new branch at the same time.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b new-branch</span><br></pre></td></tr></table></figure><p>After working on your file you can add the particular file to this branch.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add filename</span><br></pre></td></tr></table></figure><p>Or add all file in the current folder to this branch.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><p>Then you can make a commit locally, remember always to add some comments for your commit.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;Fixed some typos&quot;</span></span><br></pre></td></tr></table></figure><p>If you are using GPG to sign your commit, add -S in the end.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;Fixed some typos&quot;</span> -S</span><br></pre></td></tr></table></figure><p>Normally, you can now push your new-branch together with the new commit to Github. Later you can go to pull request on Github.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin new-branch</span><br></pre></td></tr></table></figure><p>Or perhaps you want to merge the new-branch locally with your master branch. First, go back to master branch then merge.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge new-branch</span><br></pre></td></tr></table></figure><p>If you have sucessfully merged the branches, you can choose to delete your previous new-branch locally. Be careful here.</p><p>The -d option stands for –delete, which would delete the local branch, only if you have already pushed and merged it with your remote branches.</p><p>The -D option stands for –delete –force, so by the name, you can guess it will delete the local branch no matter if you have pushed/merged or not.</p><p>So, please be extra careful. I suggest you use -d unless you are totally sure and have double checked the git status.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d new-branch</span><br><span class="line">git branch -D new-branch</span><br></pre></td></tr></table></figure><p>If you previously have pushed the new-branch to Github and now you want to delete it remotely, yes, you can.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete new-branch</span><br></pre></td></tr></table></figure><p>When in doubt, please read documentations.<br><a href="https://www.git-scm.com/doc">https://www.git-scm.com/doc</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;These notes are for easy reference since I am new to Git.&lt;/p&gt;
+&lt;p&gt;You can clone the particular branch in the repo.&lt;/p&gt;
+&lt;figure class=&quot;high</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Install SQL Server 2019 and SQL Server Management Studio (SSMS) on MacBook</title>
+    <link href="http://yiweishen.github.io/2020/10/18/Install-SQL-Server-2019-and-SQL-Server-Management-Studio-SSMS-on-Macbook/"/>
+    <id>http://yiweishen.github.io/2020/10/18/Install-SQL-Server-2019-and-SQL-Server-Management-Studio-SSMS-on-Macbook/</id>
+    <published>2020-10-17T16:17:28.000Z</published>
+    <updated>2020-10-20T12:37:54.647Z</updated>
+    
+    <content type="html"><![CDATA[<p>As required by Database course, both software is expected to be installed on the laptop. Unfortunately, there are no mac versions for neither SQL Server 2019 nor SQL Server Management Studio (SSMS). So, here is the plan. I will not talk about details, please use Google.</p><ol><li>Register and get a free ‘Personal Use’ License for VMware Fusion</li><li>Install VMware Fusion and activate it using the license</li><li>Install Windows 10 on VMware Fusion</li><li>Install SQL Server 2019</li><li>Install SQL Server Management Studio (SSMS)</li></ol><h3 id="Register-and-get-a-free-‘Personal-Use’-License-for-VMware-Fusion"><a href="#Register-and-get-a-free-‘Personal-Use’-License-for-VMware-Fusion" class="headerlink" title="Register and get a free ‘Personal Use’ License for VMware Fusion"></a>Register and get a free ‘Personal Use’ License for VMware Fusion</h3><p>Go to VMware Fusion website and create a personal account<br><a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal#tab_register">https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal#tab_register</a></p><p>After your account is activated (email confirmed), login and you will see the license information and download packages link. Download it and install.</p><h3 id="Install-VMware-Fusion-and-activate-it-using-the-license"><a href="#Install-VMware-Fusion-and-activate-it-using-the-license" class="headerlink" title="Install VMware Fusion and activate it using the license"></a>Install VMware Fusion and activate it using the license</h3><p>In the previous step, you should have received your personal license for VMware Fusion. Just use it.</p><h3 id="Install-Windows-10-on-VMware-Fusion"><a href="#Install-Windows-10-on-VMware-Fusion" class="headerlink" title="Install Windows 10 on VMware Fusion"></a>Install Windows 10 on VMware Fusion</h3><p>Go to Microsoft website to download Windows 10 Disc Image (ISO File)<br><a href="https://www.microsoft.com/en-ca/software-download/windows10">https://www.microsoft.com/en-ca/software-download/windows10</a></p><p>Select edition: Windows 10<br>Select product language: English</p><p>Then you will have the ISO file, go and install it (without a Product Key) on VMware Fusion. Don’t worry about Windows 10 activation (for now).</p><h3 id="Install-SQL-Server-2019"><a href="#Install-SQL-Server-2019" class="headerlink" title="Install SQL Server 2019"></a>Install SQL Server 2019</h3><p>Since you have Windows 10, the rest will be easy.</p><p>Download the express version of SQL Server 2019 and install. (Choose basic mode when you install it, so you don’t need to worry about the configurations.)<br><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-downloads">https://www.microsoft.com/en-ca/sql-server/sql-server-downloads</a></p><h3 id="Install-SQL-Server-Management-Studio-SSMS"><a href="#Install-SQL-Server-Management-Studio-SSMS" class="headerlink" title="Install SQL Server Management Studio (SSMS)"></a>Install SQL Server Management Studio (SSMS)</h3><p>Here is the link.<br><a href="https://docs.microsoft.com/en-ca/sql/ssms/download-sql-server-management-studio-ssms">https://docs.microsoft.com/en-ca/sql/ssms/download-sql-server-management-studio-ssms</a></p><p>That’s it.</p><p>Update:</p><p>If you are a student, your school might offer free Product Keys for windows 10 Education version.<br><a href="https://onthehub.com/">https://onthehub.com</a></p><p>Once you have the Product Key, activate your windows as you always do.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;As required by Database course, both software is expected to be installed on the laptop. Unfortunately, there are no mac versions for nei</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
