@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-05-02T13:28:12.823Z</updated>
+  <updated>2021-05-02T15:03:47.210Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="http://yiweishen.github.io/2021/05/03/Hello-Hexo/"/>
     <id>http://yiweishen.github.io/2021/05/03/Hello-Hexo/</id>
     <published>2021-05-03T01:24:54.000Z</published>
-    <updated>2021-05-02T13:28:12.823Z</updated>
+    <updated>2021-05-02T15:03:47.210Z</updated>
     
-    <content type="html"><![CDATA[<p>Finally, I got hexo upgraded.</p><p>It worked fine, again.</p>]]></content>
+    <content type="html"><![CDATA[<p>Finally, I got hexo upgraded.</p><p>Simple &amp; powerful as it is advertised.</p><p>It worked fine, I guess.</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;Finally, I got hexo upgraded.&lt;/p&gt;
-&lt;p&gt;It worked fine, again.&lt;/p&gt;
+&lt;p&gt;Simple &amp;amp; powerful as it is advertised.&lt;/p&gt;
+&lt;p&gt;It worked fine, I guess.&lt;/p&gt;
 </summary>
       
     
