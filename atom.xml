@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-05-02T15:03:47.210Z</updated>
+  <updated>2021-05-23T13:11:38.632Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Superclass Typo in Servlet Template of Eclipse</title>
+    <link href="http://yiweishen.github.io/2021/05/24/Superclass-Typo-in-Servlet-Template-of-Eclipse/"/>
+    <id>http://yiweishen.github.io/2021/05/24/Superclass-Typo-in-Servlet-Template-of-Eclipse/</id>
+    <published>2021-05-24T00:52:39.000Z</published>
+    <updated>2021-05-23T13:11:38.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>When you are using the Servlet Template in Eclipse, you may encounter the error saying “The import javax.servlet cannot be resolved.”</p><p>For example, I am using Eclipse for Mac (Version 4.19.0). First, create a Dynamic Web Project, target runtime: Apache Tomcat v10.0, Dynamic web module version 4.0. And inside this project, create a new servlet file using the Create Servlet Wizard. Soon you will see the errors pop up in the servlet file you just created.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// BEFORE</span></span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br></pre></td></tr></table></figure><p>How to fix it? All you have to do is changing the superclass name from javax into jakarta. Why does this happen? I think it is because, as mentioned on Wikipedia page, that from 12 Jun 2020 and on, API moved from package javax.servlet to jakarta.servlet. Let’s hope Eclipse will update the template someday in future. For the exising codes out there, I guess they are doing well.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AFTER</span></span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> jakarta.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> jakarta.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> jakarta.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> jakarta.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> jakarta.servlet.http.HttpServletResponse;</span><br></pre></td></tr></table></figure><p>Of course, you can create an empty class file to build servlet from scratch, to avoid such issues. Just in case you do face the similar errors in Eclipse when coding Java, I hope the simple fix would help you.</p><p>Wikipedia page of Jakarta Servlet:<br><a href="https://en.wikipedia.org/wiki/Jakarta_Servlet">https://en.wikipedia.org/wiki/Jakarta_Servlet</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;When you are using the Servlet Template in Eclipse, you may encounter the error saying “The import javax.servlet cannot be resolved.”&lt;/p&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello Hexo again</title>
@@ -405,26 +425,6 @@
     <summary type="html">&lt;p&gt;These notes are for easy reference since I am new to Git.&lt;/p&gt;
 &lt;p&gt;You can clone the particular branch in the repo.&lt;/p&gt;
 &lt;figure class=&quot;high</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Install SQL Server 2019 and SQL Server Management Studio (SSMS) on MacBook</title>
-    <link href="http://yiweishen.github.io/2020/10/18/Install-SQL-Server-2019-and-SQL-Server-Management-Studio-SSMS-on-Macbook/"/>
-    <id>http://yiweishen.github.io/2020/10/18/Install-SQL-Server-2019-and-SQL-Server-Management-Studio-SSMS-on-Macbook/</id>
-    <published>2020-10-17T16:17:28.000Z</published>
-    <updated>2020-10-20T12:37:54.647Z</updated>
-    
-    <content type="html"><![CDATA[<p>As required by Database course, both software is expected to be installed on the laptop. Unfortunately, there are no mac versions for neither SQL Server 2019 nor SQL Server Management Studio (SSMS). So, here is the plan. I will not talk about details, please use Google.</p><ol><li>Register and get a free ‘Personal Use’ License for VMware Fusion</li><li>Install VMware Fusion and activate it using the license</li><li>Install Windows 10 on VMware Fusion</li><li>Install SQL Server 2019</li><li>Install SQL Server Management Studio (SSMS)</li></ol><h3 id="Register-and-get-a-free-‘Personal-Use’-License-for-VMware-Fusion"><a href="#Register-and-get-a-free-‘Personal-Use’-License-for-VMware-Fusion" class="headerlink" title="Register and get a free ‘Personal Use’ License for VMware Fusion"></a>Register and get a free ‘Personal Use’ License for VMware Fusion</h3><p>Go to VMware Fusion website and create a personal account<br><a href="https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal#tab_register">https://my.vmware.com/web/vmware/evalcenter?p=fusion-player-personal#tab_register</a></p><p>After your account is activated (email confirmed), login and you will see the license information and download packages link. Download it and install.</p><h3 id="Install-VMware-Fusion-and-activate-it-using-the-license"><a href="#Install-VMware-Fusion-and-activate-it-using-the-license" class="headerlink" title="Install VMware Fusion and activate it using the license"></a>Install VMware Fusion and activate it using the license</h3><p>In the previous step, you should have received your personal license for VMware Fusion. Just use it.</p><h3 id="Install-Windows-10-on-VMware-Fusion"><a href="#Install-Windows-10-on-VMware-Fusion" class="headerlink" title="Install Windows 10 on VMware Fusion"></a>Install Windows 10 on VMware Fusion</h3><p>Go to Microsoft website to download Windows 10 Disc Image (ISO File)<br><a href="https://www.microsoft.com/en-ca/software-download/windows10">https://www.microsoft.com/en-ca/software-download/windows10</a></p><p>Select edition: Windows 10<br>Select product language: English</p><p>Then you will have the ISO file, go and install it (without a Product Key) on VMware Fusion. Don’t worry about Windows 10 activation (for now).</p><h3 id="Install-SQL-Server-2019"><a href="#Install-SQL-Server-2019" class="headerlink" title="Install SQL Server 2019"></a>Install SQL Server 2019</h3><p>Since you have Windows 10, the rest will be easy.</p><p>Download the express version of SQL Server 2019 and install. (Choose basic mode when you install it, so you don’t need to worry about the configurations.)<br><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-downloads">https://www.microsoft.com/en-ca/sql-server/sql-server-downloads</a></p><h3 id="Install-SQL-Server-Management-Studio-SSMS"><a href="#Install-SQL-Server-Management-Studio-SSMS" class="headerlink" title="Install SQL Server Management Studio (SSMS)"></a>Install SQL Server Management Studio (SSMS)</h3><p>Here is the link.<br><a href="https://docs.microsoft.com/en-ca/sql/ssms/download-sql-server-management-studio-ssms">https://docs.microsoft.com/en-ca/sql/ssms/download-sql-server-management-studio-ssms</a></p><p>That’s it.</p><p>Update:</p><p>If you are a student, your school might offer free Product Keys for windows 10 Education version.<br><a href="https://onthehub.com/">https://onthehub.com</a></p><p>Once you have the Product Key, activate your windows as you always do.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;As required by Database course, both software is expected to be installed on the laptop. Unfortunately, there are no mac versions for nei</summary>
       
     
     

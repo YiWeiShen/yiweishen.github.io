@@ -129,7 +129,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">63</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -172,6 +172,86 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yiweishen.github.io/2015/10/04/Surge-%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="David Shen">
+      <meta itemprop="description" content="A quiet place for blogging">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecondHand C0D1NG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/10/04/Surge-%E9%85%8D%E7%BD%AE%E5%A4%87%E4%BB%BD/" class="post-title-link" itemprop="url">Surge 配置备份</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-10-03 14:37:32" itemprop="dateCreated datePublished" datetime="2015-10-03T14:37:32-04:00">2015-10-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2017-04-17 09:39:46" itemprop="dateModified" datetime="2017-04-17T09:39:46-04:00">2017-04-17</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这个文件作者说他会删掉因此自己备份<a href="/resources/SSEncrypt.module">SSEncrypt.module</a></p>
+<p>以下是 Surge 配置文件模板，等 iOS 版上架了测试</p>
+<p>```<br>[General]<br>loglevel = notify</p>
+<p>[Proxy]<br>Proxy = custom, 1.2.3.4, 443, rc4-md5, password, <a target="_blank" rel="noopener" href="http://surge.run/SSEncrypt.module">http://surge.run/SSEncrypt.module</a></p>
+<p>[Rule]<br>DOMAIN-KEYWORD,google,Proxy,tcp-force<br>DOMAIN-KEYWORD,facebook,Proxy,tcp-force<br>DOMAIN-KEYWORD,youtube,Proxy,tcp-force<br>DOMAIN-KEYWORD,twitter,Proxy,tcp-force<br>DOMAIN-KEYWORD,instagram,Proxy,tcp-force<br>DOMAIN-KEYWORD,gmail,Proxy,tcp-force<br>DOMAIN-KEYWORD,blogspot,Proxy</p>
+<h1 id="Remove-these-lines-below-if-you-don’t-have-trouble-accessing-Apple-resources"><a href="#Remove-these-lines-below-if-you-don’t-have-trouble-accessing-Apple-resources" class="headerlink" title="Remove these lines below if you don’t have trouble accessing Apple resources"></a>Remove these lines below if you don’t have trouble accessing Apple resources</h1><p>DOMAIN-SUFFIX,ls.apple.com,DIRECT<br>DOMAIN-SUFFIX,apple.com,Proxy<br>DOMAIN-SUFFIX,mzstatic.com,Proxy<br>DOMAIN-SUFFIX,itunes.com,Proxy<br>DOMAIN-SUFFIX,icloud.com,Proxy</p>
+<p>DOMAIN-SUFFIX,amazonaws.com,Proxy<br>DOMAIN-SUFFIX,android.com,Proxy<br>DOMAIN-SUFFIX,angularjs.org,Proxy<br>DOMAIN-SUFFIX,appspot.com,Proxy<br>DOMAIN-SUFFIX,akamaihd.net,Proxy<br>DOMAIN-SUFFIX,amazon.com,Proxy<br>DOMAIN-SUFFIX,bit.ly,Proxy<br>DOMAIN-SUFFIX,bitbucket.org,Proxy<br>DOMAIN-SUFFIX,blog.com,Proxy<br>DOMAIN-SUFFIX,blogcdn.com,Proxy<br>DOMAIN-SUFFIX,blogger.com,Proxy<br>DOMAIN-SUFFIX,blogsmithmedia.com,Proxy<br>DOMAIN-SUFFIX,box.net,Proxy<br>DOMAIN-SUFFIX,bloomberg.com,Proxy<br>DOMAIN-SUFFIX,chromium.org,Proxy<br>DOMAIN-SUFFIX,cl.ly,Proxy<br>DOMAIN-SUFFIX,cloudfront.net,Proxy<br>DOMAIN-SUFFIX,cloudflare.com,Proxy<br>DOMAIN-SUFFIX,cocoapods.org,Proxy<br>DOMAIN-SUFFIX,crashlytics.com,Proxy<br>DOMAIN-SUFFIX,dribbble.com,Proxy<br>DOMAIN-SUFFIX,dropbox.com,Proxy<br>DOMAIN-SUFFIX,dropboxstatic.com,Proxy<br>DOMAIN-SUFFIX,dropboxusercontent.com,Proxy<br>DOMAIN-SUFFIX,docker.com,Proxy<br>DOMAIN-SUFFIX,duckduckgo.com,Proxy<br>DOMAIN-SUFFIX,digicert.com,Proxy<br>DOMAIN-SUFFIX,dnsimple.com,Proxy<br>DOMAIN-SUFFIX,edgecastcdn.net,Proxy<br>DOMAIN-SUFFIX,engadget.com,Proxy<br>DOMAIN-SUFFIX,eurekavpt.com,Proxy<br>DOMAIN-SUFFIX,fb.me,Proxy<br>DOMAIN-SUFFIX,fbcdn.net,Proxy<br>DOMAIN-SUFFIX,fc2.com,Proxy<br>DOMAIN-SUFFIX,feedburner.com,Proxy<br>DOMAIN-SUFFIX,fabric.io,Proxy<br>DOMAIN-SUFFIX,flickr.com,Proxy<br>DOMAIN-SUFFIX,fastly.net,Proxy<br>DOMAIN-SUFFIX,ggpht.com,Proxy<br>DOMAIN-SUFFIX,github.com,Proxy<br>DOMAIN-SUFFIX,github.io,Proxy<br>DOMAIN-SUFFIX,githubusercontent.com,Proxy<br>DOMAIN-SUFFIX,golang.org,Proxy<br>DOMAIN-SUFFIX,goo.gl,Proxy<br>DOMAIN-SUFFIX,gstatic.com,Proxy<br>DOMAIN-SUFFIX,godaddy.com,Proxy<br>DOMAIN-SUFFIX,gravatar.com,Proxy<br>DOMAIN-SUFFIX,imageshack.us,Proxy<br>DOMAIN-SUFFIX,imgur.com,Proxy<br>DOMAIN-SUFFIX,jshint.com,Proxy<br>DOMAIN-SUFFIX,ift.tt,Proxy<br>DOMAIN-SUFFIX,j.mp,Proxy<br>DOMAIN-SUFFIX,kat.cr,Proxy<br>DOMAIN-SUFFIX,linode.com,Proxy<br>DOMAIN-SUFFIX,linkedin.com,Proxy<br>DOMAIN-SUFFIX,licdn.com,Proxy<br>DOMAIN-SUFFIX,lithium.com,Proxy<br>DOMAIN-SUFFIX,megaupload.com,Proxy<br>DOMAIN-SUFFIX,mobile01.com,Proxy<br>DOMAIN-SUFFIX,modmyi.com,Proxy<br>DOMAIN-SUFFIX,nytimes.com,Proxy<br>DOMAIN-SUFFIX,name.com,Proxy<br>DOMAIN-SUFFIX,openvpn.net,Proxy<br>DOMAIN-SUFFIX,openwrt.org,Proxy<br>DOMAIN-SUFFIX,ow.ly,Proxy<br>DOMAIN-SUFFIX,pinboard.in,Proxy<br>DOMAIN-SUFFIX,ssl-images-amazon.com,Proxy<br>DOMAIN-SUFFIX,sstatic.net,Proxy<br>DOMAIN-SUFFIX,stackoverflow.com,Proxy<br>DOMAIN-SUFFIX,staticflickr.com,Proxy<br>DOMAIN-SUFFIX,squarespace.com,Proxy<br>DOMAIN-SUFFIX,symcd.com,Proxy<br>DOMAIN-SUFFIX,symcb.com,Proxy<br>DOMAIN-SUFFIX,symauth.com,Proxy<br>DOMAIN-SUFFIX,ubnt.com,Proxy<br>DOMAIN-SUFFIX,t.co,Proxy<br>DOMAIN-SUFFIX,thepiratebay.org,Proxy<br>DOMAIN-SUFFIX,tumblr.com,Proxy<br>DOMAIN-SUFFIX,twimg.com,Proxy<br>DOMAIN-SUFFIX,twitch.tv,Proxy<br>DOMAIN-SUFFIX,twitter.com,Proxy<br>DOMAIN-SUFFIX,wikipedia.com,Proxy<br>DOMAIN-SUFFIX,wikipedia.org,Proxy<br>DOMAIN-SUFFIX,wikimedia.org,Proxy<br>DOMAIN-SUFFIX,wordpress.com,Proxy<br>DOMAIN-SUFFIX,wsj.com,Proxy<br>DOMAIN-SUFFIX,wsj.net,Proxy<br>DOMAIN-SUFFIX,wp.com,Proxy<br>DOMAIN-SUFFIX,vimeo.com,Proxy<br>DOMAIN-SUFFIX,youtu.be,Proxy<br>DOMAIN-SUFFIX,ytimg.com,Proxy</p>
+<p>// Telegram<br>IP-CIDR,91.108.56.0/22,Proxy,tcp-force<br>IP-CIDR,91.108.4.0/22,Proxy,tcp-force<br>IP-CIDR,109.239.140.0/24,Proxy,tcp-force<br>IP-CIDR,149.154.160.0/20,Proxy,tcp-force</p>
+<p>// LAN<br>IP-CIDR,192.168.0.0/16,DIRECT<br>IP-CIDR,10.0.0.0/8,DIRECT<br>IP-CIDR,172.16.0.0/12,DIRECT<br>IP-CIDR,127.0.0.0/8,DIRECT</p>
+<p>GEOIP,CN,DIRECT<br>FINAL,Proxy```</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
