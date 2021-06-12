@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-05-23T13:11:38.632Z</updated>
+  <updated>2021-06-12T14:29:48.746Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL Workbench Hangs attempting to Open MySQL Editor</title>
+    <link href="http://yiweishen.github.io/2021/06/13/MySQL-Workbench-Hangs-attempting-to-Open-MySQL-Editor/"/>
+    <id>http://yiweishen.github.io/2021/06/13/MySQL-Workbench-Hangs-attempting-to-Open-MySQL-Editor/</id>
+    <published>2021-06-13T02:20:54.000Z</published>
+    <updated>2021-06-12T14:29:48.746Z</updated>
+    
+    <content type="html"><![CDATA[<p>When this bug happens, it shows that it takes time to open the MySQL Editor, but the fact is that it will never open. So you will wait forever.</p><p>I am on MacOS Catalina and the MySQL Workbench version is 8.0.22, just in case you want to know.</p><h2 id="Why-this-error-happens-My-guess"><a href="#Why-this-error-happens-My-guess" class="headerlink" title="Why this error happens (My guess):"></a>Why this error happens (My guess):</h2><p>You changed the password to the MySQL database user, but it somehow failed to sync the password in the keychain.</p><h2 id="The-solution"><a href="#The-solution" class="headerlink" title="The solution:"></a>The solution:</h2><p>Go to the /Applicaiton/Utilities/ to find the Keychain Access App and run it. Search and delete the password to the database user. Try search ‘MySQL’. Reopen the MySQL Workbench and you should be fine now.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;When this bug happens, it shows that it takes time to open the MySQL Editor, but the fact is that it will never open. So you will wait fo</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Superclass Typo in Servlet Template of Eclipse</title>
@@ -403,28 +423,6 @@
       
       
     <summary type="html">&lt;p&gt;I am reading the book called Code: The hidden Language of Computer Hardware and Software. It is quite informative and fun. It took some c</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Simple Notes for Git</title>
-    <link href="http://yiweishen.github.io/2020/11/07/Simple-Notes-for-Git/"/>
-    <id>http://yiweishen.github.io/2020/11/07/Simple-Notes-for-Git/</id>
-    <published>2020-11-06T20:45:50.000Z</published>
-    <updated>2021-04-10T16:15:13.250Z</updated>
-    
-    <content type="html"><![CDATA[<p>These notes are for easy reference since I am new to Git.</p><p>You can clone the particular branch in the repo.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b branch-name</span><br></pre></td></tr></table></figure><p>After you have done the git clone your repo to the local device, go inside the repo folder via terminal. You can check git status or check which branch you are in.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure><p>If you want to double check if origin is correct.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure><p>You can fetch the branches along with their respective commits, but not the actual files.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure><p>If you need to synchronize your branch list, for example, a branch is delete on github but not on your local machine.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch -p</span><br></pre></td></tr></table></figure><p>You can pull actual files with info such as the branches with the respective commits.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure><p>You can create and checkout the new branch at the same time.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b new-branch</span><br></pre></td></tr></table></figure><p>After working on your file you can add the particular file to this branch.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add filename</span><br></pre></td></tr></table></figure><p>Or add all file in the current folder to this branch.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><p>Then you can make a commit locally, remember always to add some comments for your commit.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;Fixed some typos&quot;</span></span><br></pre></td></tr></table></figure><p>If you are using GPG to sign your commit, add -S in the end.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;Fixed some typos&quot;</span> -S</span><br></pre></td></tr></table></figure><p>Normally, you can now push your new-branch together with the new commit to Github. Later you can go to pull request on Github.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin new-branch</span><br></pre></td></tr></table></figure><p>Or perhaps you want to merge the new-branch locally with your master branch. First, go back to master branch then merge.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge new-branch</span><br></pre></td></tr></table></figure><p>If you have sucessfully merged the branches, you can choose to delete your previous new-branch locally. Be careful here.</p><p>The -d option stands for –delete, which would delete the local branch, only if you have already pushed and merged it with your remote branches.</p><p>The -D option stands for –delete –force, so by the name, you can guess it will delete the local branch no matter if you have pushed/merged or not.</p><p>So, please be extra careful. I suggest you use -d unless you are totally sure and have double checked the git status.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d new-branch</span><br><span class="line">git branch -D new-branch</span><br></pre></td></tr></table></figure><p>If you previously have pushed the new-branch to Github and now you want to delete it remotely, yes, you can.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete new-branch</span><br></pre></td></tr></table></figure><p>When in doubt, please read documentations.<br><a href="https://www.git-scm.com/doc">https://www.git-scm.com/doc</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;These notes are for easy reference since I am new to Git.&lt;/p&gt;
-&lt;p&gt;You can clone the particular branch in the repo.&lt;/p&gt;
-&lt;figure class=&quot;high</summary>
       
     
     

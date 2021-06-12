@@ -129,7 +129,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">63</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -172,6 +172,83 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yiweishen.github.io/2017/04/05/datetime-Module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="David Shen">
+      <meta itemprop="description" content="A quiet place for blogging">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecondHand C0D1NG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2017/04/05/datetime-Module/" class="post-title-link" itemprop="url">datetime Module</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-04-04 23:35:16" itemprop="dateCreated datePublished" datetime="2017-04-04T23:35:16-04:00">2017-04-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2017-04-17 09:37:13" itemprop="dateModified" datetime="2017-04-17T09:37:13-04:00">2017-04-17</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=2007819&auto=1&height=66"></iframe>
+
+<p>The topic today is datetime which makes me think of life.  Maybe, music is a mataphor of life.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line">t = datetime.date(<span class="number">2017</span>, <span class="number">4</span>, <span class="number">4</span>)</span><br><span class="line">t.isoweekday() <span class="comment"># 2</span></span><br><span class="line">t.isoformat() <span class="comment"># &#x27;2017-04-04&#x27;</span></span><br><span class="line"></span><br><span class="line">one_day = datetime.timedelta(days=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>Other things useless (maybe not) you could find on<br><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/datetime.html">https://docs.python.org/3/library/datetime.html</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> date</span><br><span class="line"></span><br><span class="line">today = date.today()</span><br><span class="line">today == date.fromtimestamp(time.time()) <span class="comment"># True</span></span><br><span class="line">my_birthday = date(today.year, <span class="number">6</span>, <span class="number">24</span>) <span class="comment"># Fake birthday</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> my_birthday &lt; today:</span><br><span class="line">    my_birthday = my_birthday.replace(year=today.year + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">time_to_birthday = <span class="built_in">abs</span>(my_birthday - today) <span class="comment"># why we need abs that makes previous IF statement meaningless</span></span><br><span class="line">time_to_birthday.days</span><br></pre></td></tr></table></figure>
+<p>You could always find the manual. That’s enough for today.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -953,87 +1030,6 @@
 
 <p>To deal with the motion shake of iPhone:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) &#123;</span><br><span class="line">    if event?.subtype &#x3D;&#x3D; UIEventSubtype.MotionShake &#123;</span><br><span class="line">        print(&quot;The phone has been shaken.”)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yiweishen.github.io/2015/12/04/3-Ways-to-Resign-Keyboard-in-Swift/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="David Shen">
-      <meta itemprop="description" content="A quiet place for blogging">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SecondHand C0D1NG">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/12/04/3-Ways-to-Resign-Keyboard-in-Swift/" class="post-title-link" itemprop="url">3 Ways to Resign Keyboard in Swift</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-12-03 19:07:11" itemprop="dateCreated datePublished" datetime="2015-12-03T19:07:11-05:00">2015-12-03</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2017-04-17 09:38:20" itemprop="dateModified" datetime="2017-04-17T09:38:20-04:00">2017-04-17</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>For the apps that enable users to input something in a textfield, you should always keep an eye on the keyboard resign.  Here are 3 of the most common ways to accomplish this goal.</p>
-<p>No.1 To resign the first responder position of the keyboard in the buttom action so that press this bottom would also cause keyboard dismiss:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.someTextField.resignFirstResponder()</span><br></pre></td></tr></table></figure>
-
-<p>No.2 To override the touchesBegan function so that if users touch outside the keyboard, the keyboard closes down:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">override func touchesBegan(touches: Set&lt;UITouch&gt;, withEvent event: UIEvent?) &#123;</span><br><span class="line">        self.view.endEditing(true)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>No.3 To inherit UITextFieldDelegate for the current ViewController, then use textFieldShouldReturn function so that when users press return key of the keyboard, the keyboard resigns:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">func textFieldShouldReturn(textField: UITextField) -&gt; Bool &#123;</span><br><span class="line">        someTextField.resignFirstResponder()</span><br><span class="line">        return true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Just a simple note for myself.</p>
-
       
     </div>
 
