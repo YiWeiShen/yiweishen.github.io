@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-06-12T14:29:48.746Z</updated>
+  <updated>2021-06-24T06:18:00.967Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Emulator 30.7.4 Crashes in Android Studio 4.2.1</title>
+    <link href="http://yiweishen.github.io/2021/06/25/Emulator-30-7-4-Crashes-in-Android-Studio-4-2-1/"/>
+    <id>http://yiweishen.github.io/2021/06/25/Emulator-30-7-4-Crashes-in-Android-Studio-4-2-1/</id>
+    <published>2021-06-24T18:03:05.000Z</published>
+    <updated>2021-06-24T06:18:00.967Z</updated>
+    
+    <content type="html"><![CDATA[<p>All emulators in AVD failed to run after I <em>accidentally</em> update Android Studio to 4.2.1 on macOS Catalina (10.15.7).</p><p>You can find more debug details if you run the emulator in terminal.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">emulator -list-avds</span><br><span class="line">emulator -avd your_avd_name</span><br></pre></td></tr></table></figure><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Downgrade (sort of) amulator to 30.4.5 (build_id 7140946)<br><a href="https://dl.google.com/android/repository/emulator-darwin_x64-7140946.zip">https://dl.google.com/android/repository/emulator-darwin_x64-7140946.zip</a></p><p>First, downlaod the zip file and unzip it.<br>Then, go to this folder –&gt; /User/Library/Android/sdk/emulator/<br>Replace the items inside with what you have downloaded.<br>Restart Android Studio (for example, go to menu File, select Invalidate Caches / Restart) and try to run the emulators again.</p><p>You will see the warnings saying something, like, these files can not be verified due to unknown developer. Remember to go to Mac System Preference, Security &amp; Privacy, under the General tab, all these app to run. Eventually, everything will be fine. Good luck.</p><p>Ref:<br><a href="https://issuetracker.google.com/issues/191799887">https://issuetracker.google.com/issues/191799887</a><br><a href="https://issuetracker.google.com/issues/191805460">https://issuetracker.google.com/issues/191805460</a><br><a href="https://medium.com/nerd-for-tech/how-to-downgrade-android-emulator-on-macos-6e611d2d2bcb">https://medium.com/nerd-for-tech/how-to-downgrade-android-emulator-on-macos-6e611d2d2bcb</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;All emulators in AVD failed to run after I &lt;em&gt;accidentally&lt;/em&gt; update Android Studio to 4.2.1 on macOS Catalina (10.15.7).&lt;/p&gt;
+&lt;p&gt;You c</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL Workbench Hangs attempting to Open MySQL Editor</title>
@@ -403,26 +424,6 @@
       
       
     <summary type="html">&lt;p&gt;Today, I was trying to use VLookup function in excel to find a particular item in one column with multiple criteria in other columns. It </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Code: The Hidden Language</title>
-    <link href="http://yiweishen.github.io/2021/03/02/Code-The-Hidden-Language/"/>
-    <id>http://yiweishen.github.io/2021/03/02/Code-The-Hidden-Language/</id>
-    <published>2021-03-02T01:29:17.000Z</published>
-    <updated>2021-03-01T12:36:14.605Z</updated>
-    
-    <content type="html"><![CDATA[<p>I am reading the book called Code: The hidden Language of Computer Hardware and Software. It is quite informative and fun. It took some chapters to build some small pieces of hardware. At that moment you have no idea where this is going, because you don’t know how to use this hardware. It did lead you somewhere in the end that you can put them together to build an entire computer. </p><p>What a great experience. It helps me to understand how computers work and especially how things work in small scales and how things evolve historically. Thank you Charles Petzold, it’s a good book.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;I am reading the book called Code: The hidden Language of Computer Hardware and Software. It is quite informative and fun. It took some c</summary>
       
     
     
