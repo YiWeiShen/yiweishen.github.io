@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-06-24T06:29:07.959Z</updated>
+  <updated>2021-07-11T05:46:57.829Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rescue a Bricked iPad after Jailbreaking</title>
+    <link href="http://yiweishen.github.io/2021/07/12/Rescue-a-Bricked-iPad-after-Jailbreaking/"/>
+    <id>http://yiweishen.github.io/2021/07/12/Rescue-a-Bricked-iPad-after-Jailbreaking/</id>
+    <published>2021-07-11T17:01:16.000Z</published>
+    <updated>2021-07-11T05:46:57.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>Somehow I decided to reset an useless old iPad (A1395, iOS 9.3.5) which had been jailbroken. After erasing all the content and settings, I found the iPad became bricked. The situation is that if you press the Power button, a few seconds of Apple logo shows, followed by a battery status in the center of the screen. And that’s it, it just did not turn on.</p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>You need to make sure you have charged the iPad for several hours. It helps to rule out the cases when iPad refuses to turn on with low battery. If the battery is all good, there are two ways to rescue your iPad. Try the force-restart first.</p><h3 id="Force-Restart"><a href="#Force-Restart" class="headerlink" title="Force Restart"></a>Force Restart</h3><p>Hold down the Power button and the Home button at the same time for 10 seconds. You will see the Apple logo twice I guess. The second time when you see the logo, you can let go the two buttons and wait/pray for the iPad to turn on.</p><h3 id="Factory-Reset-in-DFU-mode"><a href="#Factory-Reset-in-DFU-mode" class="headerlink" title="Factory Reset in DFU mode"></a>Factory Reset in DFU mode</h3><ul><li>Connect your iPad to a Mac (Sorry, I did not test if you can connect iPad to a Windows, chances are you can)</li><li>On the iPad, hold down the Power button and the Home button at the same time, yes, for 10 seconds.</li><li>Then, release the Power button but continue to hold the Home button for another 5 seconds.</li><li>It should be entering DFU mode now. Choose Restore the factory settings.</li><li>Wait for the iPad to reinstall everything once again.</li></ul><p>I know a bricked iPad is useless. But, you know what, after rescuing the old iPad, I find the iPad is <em>still</em> useless anyway.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Somehow I decided to reset an useless old iPad (A1395, iOS 9.3.5) which had been jailbroken. After erasing all the content and settings, </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Emulator 30.7.4 Crashes in Android Studio 4.2.1</title>
@@ -405,26 +425,6 @@
       
     <summary type="html">&lt;p&gt;When I am trying to use the AT command in terminal, it prompt with such a message.&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IF statement with {1,0} matrix</title>
-    <link href="http://yiweishen.github.io/2021/03/03/IF-statement-with-1-0-matrix/"/>
-    <id>http://yiweishen.github.io/2021/03/03/IF-statement-with-1-0-matrix/</id>
-    <published>2021-03-02T19:45:12.000Z</published>
-    <updated>2021-03-02T06:57:33.176Z</updated>
-    
-    <content type="html"><![CDATA[<p>Today, I was trying to use VLookup function in excel to find a particular item in one column with multiple criteria in other columns. It can be done with adding extra columns first to create one real column to look up for and attach the data column you are looking for after that artificial column. For example, you can combine column A&amp;B&amp;C to merge them into one column, so that you can use VLOOKUP(item_A&amp;item_B&amp;item_C, A&amp;B&amp;C&amp;data_column, 2, 0) to find the result.</p><p>To avoid making extra columns, in this case, A&amp;B&amp;C&amp;data_column, I found we can also use IF({1, 0}, A&amp;B&amp;C, data_column) to make such matrix instead of actually copying &amp; pasting to create one. Because IF function can work with array {1, 0} as logical tests, so basically it runs the first test with 1 (i.e. True) and then again with 0 (i.e False), in the end, it generates the result matrix A&amp;B&amp;C &amp; data_column. Really impressive because it looks simple and elegant.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Today, I was trying to use VLookup function in excel to find a particular item in one column with multiple criteria in other columns. It </summary>
       
     
     
