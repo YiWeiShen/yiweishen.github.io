@@ -6,7 +6,7 @@
   <link href="http://yiweishen.github.io/atom.xml" rel="self"/>
   
   <link href="http://yiweishen.github.io/"/>
-  <updated>2021-07-11T05:46:57.829Z</updated>
+  <updated>2021-07-14T16:27:43.385Z</updated>
   <id>http://yiweishen.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Store Password in Database</title>
+    <link href="http://yiweishen.github.io/2021/07/15/Store-Password-in-Database/"/>
+    <id>http://yiweishen.github.io/2021/07/15/Store-Password-in-Database/</id>
+    <published>2021-07-15T02:59:48.000Z</published>
+    <updated>2021-07-14T16:27:43.385Z</updated>
+    
+    <content type="html"><![CDATA[<p>I have been thinking about how to store customer’s login details into the database.</p><p>I mean, how to arrange the tables to store the passwords securely enough so that even if one day the database is leaked (and it will), no actual passwords will be exposed.</p><p>On seond thoughts, managing the passwords by myself could be a bad idea. Hand it over to Google or Facebook.</p><p>OK. Let’s say, for some unknown reasons, I have to do it. The million-dollar question is, HOW.</p><ul><li>If I store the plain text password anywhere in the database, the company probably would just fire the guy who designed the database, that’s me, for good.</li><li>If I store the hashed password with username for example, it is vulnerable to dictionary or rainbow table attacks. But maybe I can keep my job, for now.</li><li>If I use SHA512, instead of MD5, as the hash function, the computational power required to crack the passwords is signaficantly different.</li></ul><h2 id="Solution-perhaps"><a href="#Solution-perhaps" class="headerlink" title="Solution (perhaps)"></a>Solution (perhaps)</h2><p>Add random salt to each individual password, and then calculate the SHA512 hash values. Remember to generate salt again, once the customer changes the password. Also, I need a cryptographically secure random function to generate salt.</p><table><thead><tr><th>LoginID</th><th align="center">LoginName</th><th align="right">Salt</th><th align="right">HashedPasswordWithSalt</th></tr></thead><tbody><tr><td>0000001</td><td align="center">Alice</td><td align="right">T7#jd</td><td align="right">RncFuVDvUtVxXUFrvOHPfiF</td></tr><tr><td>0000002</td><td align="center">Bob</td><td align="right">$1Yo2</td><td align="right">UZ0CkHkEccFErZujyAl3wys</td></tr><tr><td>0000003</td><td align="center">Charlie</td><td align="right">UWp*1</td><td align="right">Pt4a1176FY2zcewmbcvEuAN</td></tr></tbody></table><p>In practice, use longer salt, I guess.</p><p>Ref:</p><p>Password Cracking<br><a href="https://www.youtube.com/watch?v=7U-RbOKanYs">https://www.youtube.com/watch?v=7U-RbOKanYs</a></p><p>How NOT to Store Passwords!<br><a href="https://www.youtube.com/watch?v=8ZtInClXe1Q">https://www.youtube.com/watch?v=8ZtInClXe1Q</a></p><p>Rainbow table<br><a href="https://en.wikipedia.org/wiki/Rainbow_table">https://en.wikipedia.org/wiki/Rainbow_table</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;I have been thinking about how to store customer’s login details into the database.&lt;/p&gt;
+&lt;p&gt;I mean, how to arrange the tables to store the</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Rescue a Bricked iPad after Jailbreaking</title>
@@ -404,27 +425,6 @@
       
       
     <summary type="html">&lt;p&gt;Previously, I listened to the topic of remote working in one of the podcasts. It is something new to me if the work is entirely remote, b</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Full Disk Access for Terminal</title>
-    <link href="http://yiweishen.github.io/2021/03/04/Full-Disk-Access-for-Terminal/"/>
-    <id>http://yiweishen.github.io/2021/03/04/Full-Disk-Access-for-Terminal/</id>
-    <published>2021-03-03T23:11:50.000Z</published>
-    <updated>2021-03-03T10:15:41.341Z</updated>
-    
-    <content type="html"><![CDATA[<p>When I am trying to use the AT command in terminal, it prompt with such a message.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“Terminal” would like to administer your computer. </span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administration can include modifying passwords, networking and system settings.</span><br></pre></td></tr></table></figure><p>It seems you have to grant futher access to the terminal so it can work properly.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;When I am trying to use the AT command in terminal, it prompt with such a message.&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
       
     
     
