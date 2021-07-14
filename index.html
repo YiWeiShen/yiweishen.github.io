@@ -206,7 +206,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-07-14 22:59:48 / Modified: 12:27:43" itemprop="dateCreated datePublished" datetime="2021-07-14T22:59:48-04:00">2021-07-14</time>
+      <time title="Created: 2021-07-14 22:59:48 / Modified: 12:35:17" itemprop="dateCreated datePublished" datetime="2021-07-14T22:59:48-04:00">2021-07-14</time>
     </span>
 
   
@@ -220,41 +220,44 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>I have been thinking about how to store customer’s login details into the database.</p>
-<p>I mean, how to arrange the tables to store the passwords securely enough so that even if one day the database is leaked (and it will), no actual passwords will be exposed.</p>
-<p>On seond thoughts, managing the passwords by myself could be a bad idea. Hand it over to Google or Facebook.</p>
-<p>OK. Let’s say, for some unknown reasons, I have to do it. The million-dollar question is, HOW.</p>
+<p>I mean, how to arrange the tables to store the passwords securely enough so that even if one day the database is leaked (and it will), no actual passwords are exposed.</p>
+<p>On seond thoughts, managing the passwords by myself could be a bad idea.</p>
+<p>Hand it over to Google or Facebook.</p>
+<p>OK.</p>
+<p>Let’s say, for some unknown reasons, I have to do it.</p>
+<p>The million-dollar question is, HOW.</p>
 <ul>
 <li>If I store the plain text password anywhere in the database, the company probably would just fire the guy who designed the database, that’s me, for good.</li>
-<li>If I store the hashed password with username for example, it is vulnerable to dictionary or rainbow table attacks. But maybe I can keep my job, for now.</li>
+<li>If I store the hashed password with username, just like that, it is vulnerable to dictionary or rainbow table attacks. But maybe I can keep my job, for now.</li>
 <li>If I use SHA512, instead of MD5, as the hash function, the computational power required to crack the passwords is signaficantly different.</li>
 </ul>
 <h2 id="Solution-perhaps"><a href="#Solution-perhaps" class="headerlink" title="Solution (perhaps)"></a>Solution (perhaps)</h2><p>Add random salt to each individual password, and then calculate the SHA512 hash values. Remember to generate salt again, once the customer changes the password. Also, I need a cryptographically secure random function to generate salt.</p>
 <table>
 <thead>
 <tr>
-<th>LoginID</th>
+<th align="center">LoginID</th>
 <th align="center">LoginName</th>
-<th align="right">Salt</th>
-<th align="right">HashedPasswordWithSalt</th>
+<th align="center">Salt</th>
+<th align="center">HashedPasswordWithSalt</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>0000001</td>
+<td align="center">0000001</td>
 <td align="center">Alice</td>
-<td align="right">T7#jd</td>
-<td align="right">RncFuVDvUtVxXUFrvOHPfiF</td>
+<td align="center">T7#jd</td>
+<td align="center">RncFuVDvUtVxXUFrvOHPfiF</td>
 </tr>
 <tr>
-<td>0000002</td>
+<td align="center">0000002</td>
 <td align="center">Bob</td>
-<td align="right">$1Yo2</td>
-<td align="right">UZ0CkHkEccFErZujyAl3wys</td>
+<td align="center">$1Yo2</td>
+<td align="center">UZ0CkHkEccFErZujyAl3wys</td>
 </tr>
 <tr>
-<td>0000003</td>
+<td align="center">0000003</td>
 <td align="center">Charlie</td>
-<td align="right">UWp*1</td>
-<td align="right">Pt4a1176FY2zcewmbcvEuAN</td>
+<td align="center">UWp*1</td>
+<td align="center">Pt4a1176FY2zcewmbcvEuAN</td>
 </tr>
 </tbody></table>
 <p>In practice, use longer salt, I guess.</p>
